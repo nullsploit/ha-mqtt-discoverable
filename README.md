@@ -656,6 +656,6 @@ If you use this module for your own project, please add a link here.
   <img src="https://contributors-img.web.app/image?repo=unixorn/ha-mqtt-discoverable" />
 </a>
 
-Also Caleb
+Also Caleb <3
 
 Made with [contributors-img](https://contributors-img.web.app).
