@@ -11,6 +11,7 @@ Using MQTT discoverable devices lets us add new sensors and devices to HA withou
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 ## Table of Contents
 
 - [Installing](#installing)
@@ -26,7 +27,7 @@ Using MQTT discoverable devices lets us add new sensors and devices to HA withou
   - [Device](#device)
     - [Usage](#usage-3)
   - [Device trigger](#device-trigger)
-      - [Usage](#usage-4)
+    - [Usage](#usage-4)
   - [Image](#image)
     - [Usage](#usage-5)
   - [Light](#light)
@@ -59,6 +60,7 @@ ha-mqtt-discoverable runs on Python 3.10 or later.
 `pip install ha-mqtt-discoverable` if you want to use it in your own python scripts. `pip install ha-mqtt-discoverable-cli` to install the `hmd` utility scripts.
 
 <!-- Please keep the entities in alphabetical order -->
+
 ## Supported entities
 
 The following Home Assistant entities are currently implemented:
@@ -240,10 +242,12 @@ my_cover.closed()
 ```
 
 ### Device
+
 From the [Home Assistant documentation](https://developers.home-assistant.io/docs/device_registry_index):
+
 > A device is a special entity in Home Assistant that is represented by one or more entities.
-A device is automatically created when an entity defines its `device` property.
-A device will be matched up with an existing device via supplied identifiers or connections, like serial numbers or MAC addresses.
+> A device is automatically created when an entity defines its `device` property.
+> A device will be matched up with an existing device via supplied identifiers or connections, like serial numbers or MAC addresses.
 
 #### Usage
 
@@ -289,6 +293,7 @@ door_sensor.on()
 The following example creates a device trigger and generates a trigger event:
 
 ##### Usage
+
 ```py
 from ha_mqtt_discoverable import Settings
 from ha_mqtt_discoverable.sensors import DeviceInfo, DeviceTriggerInfo, DeviceTrigger
@@ -650,5 +655,8 @@ If you use this module for your own project, please add a link here.
 <a href="https://github.com/unixorn/ha-mqtt-discoverable/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=unixorn/ha-mqtt-discoverable" />
 </a>
+
+Also Caleb
+And also Julien
 
 Made with [contributors-img](https://contributors-img.web.app).
